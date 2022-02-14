@@ -1,0 +1,224 @@
+:root {
+    --negro: #002b39;
+    --blanco: #ffffff;
+    --azul1:#1489ff;
+
+}
+
+body
+{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Hind',Helvetica,Arial,Lucida,sans-serif;
+}
+
+html,body
+{
+    width: 100%;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* .fondo
+{
+
+    margin-top: 80px!important;
+    padding-top: 90px!important;
+    background-position: top center;
+    background-image: url('img/Rectangulo-7185403x.png');
+    background-repeat: no-repeat;
+    background-size: 100% 10px;
+} */
+
+
+
+.grTotal
+{
+    display: grid;
+    padding: 3em;
+    text-align: center!important;
+}
+.grTotal.imgConocimientoTarjeta
+{
+    background-size: cover;
+}
+.logo
+{
+   
+    width: 60px;
+    height: 66px;
+    opacity: 1;
+}
+
+.encabezado
+{
+    text-align: center;
+    color: var(--negro);
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style:normal ;
+    letter-spacing: normal;
+    white-space: nowrap;
+    line-height: 20mm;
+}
+
+.vinculo1
+{
+    color: var(--azul1);
+    font-style: normal;
+    cursor: pointer;
+    white-space: nowrap;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+a:link, a:visited, a:active
+{
+    text-decoration:none;
+}
+
+.botton
+{
+    font-size: 16px!important;
+    font-weight: 700!important;
+    border-width: 0px!important;  
+    border-radius: 5px!important;
+    padding: 15px 45px 11px 46px;
+    box-shadow: 0 9px 12px 0 rgb(26 72 100 / 16%);
+    /* background-image: linear-gradient(#ffffff,#007fff,#00b1ff -10%); */
+    color: var(--blanco);
+    /* margin-top: 2em!important; */
+    margin-right: 2em!important;
+    margin-left: 2em!important;
+    background-color:#007fff;
+}
+
+#crearCuenta:hover
+{   
+    background-color: var(--blanco);
+    color: #2196f3;  
+    border-color: #2196f3;
+    border-width: 1px!important;
+    cursor: pointer;
+}
+
+p
+{
+    
+    font-style: normal;
+    font-size: 18px;
+    font-weight: normal;
+    color: var(--negro);
+    line-height: 1.17;
+    letter-spacing: normal;
+    font-stretch: normal;
+
+}
+.grInformacion
+{
+    display:grid;
+    grid-template-columns: repeat(3,minmax(50px,1fr));
+    grid-template-rows: 50px,70px,50px;
+    padding-top: 2em;
+    padding-left: 15em;
+    padding-right: 15em;
+    justify-items: center;
+    justify-content: space-around;
+    align-content: stretch;
+}
+.clsImgHerramienas
+{
+    width: 300px;
+    height: 281px;
+}
+.grdProcesos
+{
+    display:grid;
+    grid-template-columns: repeat(3,minmax(50px,1fr));
+    grid-template-rows: 100px[fila1] 160px[fila2] 50px[fila3];
+    padding-left: 15em;
+    padding-right: 15em;
+    /* justify-items: center; */
+    justify-content: space-around;
+    align-content: stretch;
+}
+.grdProcesos.imgProcesos
+{
+    grid-row: 2;
+    background-image: url("img/Grupo-9213@2x.png");
+    background-size: cover;
+}
+
+.grTotal.imgPlataformas
+{
+    background-size: cover;
+}
+
+footer
+{
+    background-image: linear-gradient(90deg,#1489ff,#0073e6 100%)!important;
+    padding-top: 2em!important;
+}
+.grFooterPadre
+{
+    display: grid;
+    width: auto;
+    grid-template-columns: 100px 400px 50px 50px 50px 50px 50px 50px; 
+    grid-template-rows: 1fr[fila1] 1fr[fila2] 1fr[fila3];
+    border: 2em;
+    column-gap: 10px;
+    justify-items: stretch; 
+    justify-content: center;
+}
+
+.grFooterhijos
+{
+   align-self: center;
+   justify-self: center;
+   cursor: pointer;
+  
+}
+.grFooterhijos.imglineafooter
+{
+    background-size: cover;
+}
+
+#fl1Cl1
+{
+    grid-column: 1 / 3 ;
+    justify-self: start;
+}
+
+#fl2Cl1
+{
+    /* grid-row: 2 / -1; */
+    grid-column: 1 / -1 ;
+}
+#fl3Cl1
+{
+    grid-column: 1 / 3 ;
+}
+#fl3Cl4
+{
+    grid-column: 3 / 5 ;
+}
+#fl3Cl5
+{
+    grid-column: 5 / 7 ;
+}
+#fl3Cl7
+{
+    grid-column: 7 / 9 ;
+}
+
+.clsHipervinculo
+{   color: #ffffff;
+    align-content: center;
+    line-height: 1.0;
+    font-size: 10px;   
+    text-transform: none;
+    font-weight: bold;
+}
