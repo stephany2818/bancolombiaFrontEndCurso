@@ -20,25 +20,13 @@ html,body
     -webkit-text-size-adjust: 100%;
 }
 
-/* .fondo
-{
-
-    margin-top: 80px!important;
-    padding-top: 90px!important;
-    background-position: top center;
-    background-image: url('img/Rectangulo-7185403x.png');
-    background-repeat: no-repeat;
-    background-size: 100% 10px;
-} */
-
-
-
 .grTotal
 {
     display: grid;
     padding: 3em;
     text-align: center!important;
 }
+
 .grTotal.imgConocimientoTarjeta
 {
     background-size: cover;
@@ -50,17 +38,23 @@ html,body
     height: 66px;
     opacity: 1;
 }
+#encabezado1
+{
+    margin-block-start: unset;
 
+    
+}
 .encabezado
 {
     text-align: center;
+    font-family: inherit;
     color: var(--negro);
-    font-size: 30px;
+    font-size: auto;
     font-weight: bold;
     font-stretch: normal;
     font-style:normal ;
     letter-spacing: normal;
-    white-space: nowrap;
+    white-space: nowrap; 
     line-height: 20mm;
 }
 
@@ -69,7 +63,6 @@ html,body
     color: var(--azul1);
     font-style: normal;
     cursor: pointer;
-    white-space: nowrap;
     text-decoration: none;
     font-weight: bold;
     
@@ -107,7 +100,6 @@ a:link, a:visited, a:active
 
 p
 {
-    
     font-style: normal;
     font-size: 18px;
     font-weight: normal;
@@ -115,9 +107,11 @@ p
     line-height: 1.17;
     letter-spacing: normal;
     font-stretch: normal;
+    margin-block: unset;
+    margin-inline: unset;
 
 }
-.grInformacion
+.grHerramientas
 {
     display:grid;
     grid-template-columns: repeat(3,minmax(50px,1fr));
@@ -129,27 +123,58 @@ p
     justify-content: space-around;
     align-content: stretch;
 }
-.clsImgHerramienas
+
+.clsImgHerramientas
 {
     width: 300px;
     height: 281px;
+}
+
+.boderHerrmientas
+{
+    grid-column: 1 / span 3;
+    outline-offset: 1px solid green;
+    /* border: thin solid #002b39; */
+   border-radius:5px;
+   border-spacing: 1px;
+   border-collapse: collapse;
+   box-shadow: 0 9px 12px 0 rgb(26 72 100 / 16%);
+}
+
+h3
+{
+    margin-block-start: unset;
+    margin-block-end: 1em;
 }
 .grdProcesos
 {
     display:grid;
     grid-template-columns: repeat(3,minmax(50px,1fr));
-    grid-template-rows: 100px[fila1] 160px[fila2] 50px[fila3];
+    grid-template-rows: 50px[fila1] auto 50px[fila3];
     padding-left: 15em;
     padding-right: 15em;
-    /* justify-items: center; */
-    justify-content: space-around;
-    align-content: stretch;
+    justify-content: center;
+    align-content: center;
+    /* row-gap: 15px; */
+
 }
-.grdProcesos.imgProcesos
+
+.clsImNumProcesos
 {
-    grid-row: 2;
-    background-image: url("img/Grupo-9213@2x.png");
+    width: 50px;
+    height: 25px;
+    align-content: center;
+    align-self: center;
+}
+
+.imgProcesos
+{   
+    transform: translate(0px,-6300%);
     background-size: cover;
+    transform-style: flat;
+    background-position: center top;
+    transform-box: view-box;  
+    justify-self: center;
 }
 
 .grTotal.imgPlataformas
@@ -178,12 +203,12 @@ footer
 {
    align-self: center;
    justify-self: center;
-   cursor: pointer;
-  
+   cursor: pointer; 
 }
 .grFooterhijos.imglineafooter
 {
     background-size: cover;
+    grid-area: 2 / 1 / span 1 / span 8;
 }
 
 #fl1Cl1
@@ -194,7 +219,6 @@ footer
 
 #fl2Cl1
 {
-    /* grid-row: 2 / -1; */
     grid-column: 1 / -1 ;
 }
 #fl3Cl1
