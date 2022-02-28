@@ -3,8 +3,10 @@
     <head>
         <!-- https://www.w3schools.com/css/-->
         <meta charset="UTF-8">
+        <meta name ="viewport" content="width=device-width,initial-scale=1.0">
         <title>Steph@ - Ventajas de registrarte en Venn	</title>
         <link href="css/ejercicio_ven_front.css" type="text/css" rel="stylesheet">
+        <link href="css/ejercicio_venfront_media.css" type="text/css" rel="stylesheet" media="all">
         <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     </head>
 <body>
@@ -36,20 +38,19 @@
         <div id="herramientas" class="encabezado">
             <h1 id="encabezado2">Herramientas para crear tu <br> curso online</h1>
         </div>  
-
-        <div id="grInformacion" class="grHerramientas ">
+        <div id="grInformacion" class="grHerramientas">
             <!-- Fila 1 -->
             <div id="f1c1">
-                <img class="clsImgHerramientas boderHerrmientas" id="sesiones" src="img/Sesiones_Vivox2.png" alt="">
+                <img class="imgHerramientas" id="imgsesiones" src="img/Sesiones_Vivox2.png" alt="">
             </div>
             <div id="f1c2">
-                <img class="clsImgHerramientas boderHerrmientas" id="cursos" src="img/Cursos-Pre-Grabadosx2.png" alt="">
+                <img class="imgHerramientas" id="imgcursos" src="img/Cursos-Pre-Grabadosx2.png" alt="">
             </div>
             <div id="f1c3"> 
-                <img class="clsImgHerramientas boderHerrmientas" id="mentorias" src="img/Mentorias_1_1x2.png" alt="">
+                <img class="imgHerramientas" id="imgmentorias" src="img/Mentorias_1_1x2.png" alt="">
             </div>
             <!-- Fila 2 -->
-            <div id="f2c1">
+            <div id="f2c1" class="">
                 <h3>Sesiones en Vivo</h3>
              </div>
              <div id="f2c2"> 
@@ -59,7 +60,7 @@
                  <h3>Mentorías 1 a 1</h3>
              </div>
             <!-- Fila 3 -->
-             <div id="f3c1">
+             <div id="f3c1" class="">
                 <p>Un espacio para enseñar y resolver dudas <br> al momento. </p>
              </div>
              <div id="f3c2">
@@ -69,88 +70,158 @@
                 <p>Tiempo exclusivo para trabajar de forma individual <br> con tu aprendiz.</p>
              </div> 
         </div>
-        <br>
         <div id="crearCuenta3">
             <button id="crearCuenta" class="botton"> Crea tu cuenta gratis </button>
         </div>
     </div>
     <div id="grProceso" class="grTotal" >
-        <div id="proceso" class="encabezado">
-            <h1 id="encabezado3">Es un proceso muy simple<br></h1>
-        </div>
-        <div id="grProcesos" class="grdProcesos ">
-            <!-- Fila 1 -->
-            <div id="pf1c1">
-                <img id="01" class="clsImNumProcesos" src="img/Grupo-6587402x.png" alt="">
-            </div>
-            <div id="pf1c2" >
-                <img id="02" class="clsImNumProcesos" src="img/Grupo-6567402x.png" alt="">
-            </div>
-            <div id="pf1c3" >
-                <img id="03" class="clsImNumProcesos" src="img/Grupo-6646402x.png" alt="">
-            </div>
-
-
-
-
-
-
-
-
-            <!-- Fila 2 -->
-           
-            <div id="pf2c1">
-                <img id=""  src="img/Grupo-7001.svg" alt="">
-                <img id=""  class="imgProcesos" src="img/Rectangulo-8086@2x.png" alt="">
-            </div>
-            <div id="pf2c2">               
-                <img id="" src="img/Grupo-7002.svg" alt="">
-             </div>
-            <div id="pf2c3" >
-                <img id="" src="img/Grupo-7003.svg" alt="">
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-            <!-- Fila 3 -->
-            <div id="pf3c1">
-                <p>Crea tu cuenta</p>
-            </div>
-            <div id="pf3c2">
-                <p>Completa tu perfil</p>
-            </div>
-            <div id="pf3c3">
+        <h1 id="encabezado3">Es un proceso muy simple<br></h1>
+            <div id="grProcesos" class="grdProcesos">
+                <!-- Fila 1 -->
+                <div id="pf1c1" class="clsImNumProcesos"></div>
+                <div id="pf1c2"></div>
+                <div id="pf1c3" class="clsImNumProcesos"></div>
+                <div id="pf1c4"></div>           
+                <div id="pf1c5" class="clsImNumProcesos"></div>
+                <!-- Fila 2 -->
+                <div id="pf2c1" class="imgProcesos"></div>
+                <div id="pf2c2"></div>
+                <div id="pf2c3" class="imgProcesos"></div>
+                <div id="pf2c4"></div>           
+                <div id="pf2c5" class="imgProcesos"></div>
+                <!-- Fila 3 -->
+                <div id="pf3c1" class="txtProcesos">
+                    <p>Crea tu cuenta</p>
+                </div>
+                <div id="pf3c2">
+                </div>
+                <div id="pf3c3" class="txtProcesos">
+                    <p>Completa tu perfil</p>
+                </div>
+                <div id="pf3c4">
+                </div>           
+                <div id="pf3c5" class="txtProcesos">
                 <p>Crea tu curso online</p>
+                </div>
             </div>
-        </div>
-        <br>
-    
-        <div id="crearCuenta4">
+         <div id="crearCuenta4">
             <button id="crearCuenta" class="botton"> Crea tu cuenta gratis </button>
-        </div>
-           
+        </div>         
     </div>
     <div id="grPlataforma" class="grTotal imgPlataformas" style="background-image: url(img/Enmascarar-grupo-285@3x-scaled.webp);">
         <div id="plataforma" class="encabezado">
             <h1 id="encabezado3">Somos una plataforma <br> que lo tiene todo</h1>
         </div>
+            <section id="secPlataformas">
+                <div id="grCuadroPlataformas" class="grdCuadroPlataformas">
+                    <!-- Fila1 -->
+                        <!-- Columna 1 -->
+                        <div id="" class="boderPlataformas">
+                        <img src="img/Grupo 8829.png" alt="">
+                        <p>
+                            Creación de grupo <span class="txtPlataformas">productos</span><br>
+                            <span class="txtPlataformas">gratuitos</span>
+                        </p>
+                        </div>
+                        <!-- Columna 2 -->
+                        <div id="F1Col2" class="boderPlataformas">
+                            <img src="img/Grupo 8834.png" alt="">
+                            <p>
+                                Cursos Pre Grabados<br>
+                                <span class="txtPlataformas">ilimitados</span>
+                            </p>
+                        </div>                        
+                        <!-- Columna 3 -->
+                        <div id="F1Col3" class="boderPlataformas">
+                            <img src="img/Grupo 8825.png" alt="">
+                            <p>
+                                Sesiones en Vivo<br>
+                                <span class="txtPlataformas">ilimitadas</span>
+                            </p>
+                        </div>
+                    <!-- Fila2 -->
+                        <!-- Columna 1 -->
+                        <div id="F2Col1" class="boderPlataformas">
+                            <img src="img/Grupo 8827.png" alt="">
+                            <p>
+                                Mentorias 1 a 1 <br>
+                                <span class="txtPlataformas">ilimitadas</span>
+                            </p>
+                        </div>
+                        <!-- Columna 2 -->
+                        <div id="F2Col2" class="boderPlataformas">
+                            <img src="img/Grupo 8836.png" alt="">
+                            <p>
+                                <span class="txtPlataformas">Descarga tu base de datos</span>
+                                <br>
+                                con un sólo clic
+                            </p>
+                        </div>
+                        <!-- Columna 3 -->
+                        <div id="F2Col3" class="boderPlataformas">
+                            <img src="img/Grupo 8831.png" alt="">
+                            <p>
+                               Plataforma de video <br>
+                               <span class="txtPlataformas">integrada</span>
+                            </p>
+                        </div>
+                    <!-- Fila3 -->
+                        <!-- Columna 1 -->
+                        <div id="F3Col1" class="boderPlataformas">
+                            <img src="img/Grupo 8826.png" alt="">
+                            <p>
+                                <span class="txtPlataformas">Grabación</span> de tus Sesiones<br>
+                                en Vivo
+                            </p>
+                        </div>
+                        <!-- Columna 2 -->
+                        <div id="F3Col2" class="boderPlataformas">
+                            <img src="img/Grupo 8835.png" alt="">
+                            <p>
+                                Generación de certificados<br>
+                                <span class="txtPlataformas">automáticos</span>
+                            </p>
+                        </div>
+                        <!-- Columna 3 -->
+                        <div id="F3Col3" class="boderPlataformas">
+                            <img src="img/Grupo 8832.png" alt="">
+                            <p>
+                                Plataforma de pagos<br>
+                                <span class="txtPlataformas">integrada (Stripe/paypal)</span>
+                            </p>
+                        </div>
+                    <!-- Fila4 -->
+                        <!-- Columna 1 -->
+                        <div id="F4Col1" class="boderPlataformas">
+                            <img src="img/Grupo 8828.png" alt="">
+                            <p>
+                                Sincronización de husos<br>
+                                <span class="txtPlataformas">horarios</span>
+                            </p>
+                        </div>
+                        <!-- Columna 2 -->
+                        <div id="F4Col2" class="boderPlataformas">
+                            <img src="img/Grupo 8833.png" alt="">
+                            <p>
+                                <span class="txtPlataformas">Envios de correos</span> masivos a <br>
+                                tu base de datos
+                            </p>
+                        </div>
+                        <!-- Columna 3 -->
+                        <div id="F4Col3" class="boderPlataformas">
+                            <img src="img/Grupo 8830.png" alt="">
+                            <p>
+                                <span class="txtPlataformas">Recordatorios automáticos </span><br>
+                                para eventos en vivo
+                            </p>
+                        </div>
+                </div>
+            </section>
         <div>
             <button id="crearCuenta" class="botton"> Crea tu cuenta gratis </button>
         </div>  
     </div>
 </header>
-<main>
-
-</main>
 <footer>
     <div  class="grFooterPadre">
     <!-- Fila 1 -->
@@ -179,21 +250,21 @@
             <div id="tiktok"><img id="tiktok" src="img/tiktok.svg" alt="tiktok"></div>
         </div>
     <!-- Fila 2 -->
-        <div id="fl2Cl1" class="grFooterhijos imglineafooter">
+        <div id="fl2Cl1" >
             <div>
-                <img id="lineafooter" src="img/linea_footer.png" alt="">
+                <img id="lineafooter" src="img/linea_footer.png" alt="" class="imglineafooter">
             </div>
         </div>
     <!-- Fila 3-->
         <div id="fl3Cl1"></div>
-        <div id="fl3Cl4" class="clsHipervinculo">
-            <a href="https://venntors.com/politica-de-privacidad/" target="_blank">Políticas de privacidad</a>
+        <div id="fl3Cl4" >
+            <a href="https://venntors.com/politica-de-privacidad/" target="_blank" class="footHipervinculo">Políticas de privacidad</a>
         </div>
-        <div id="fl3Cl5" class="clsHipervinculo">
-            <a href="https://venntors.com/terminos-y-condiciones/" target="_blank">Términos y condiciones</a>
+        <div id="fl3Cl5">
+            <a href="https://venntors.com/terminos-y-condiciones/" target="_blank" class="footHipervinculo">Términos y condiciones</a>
         </div>
-        <div id="fl3Cl7" class="clsHipervinculo">
-            <a href="https://venntors.com/" target="_blank">&copy;Venn 2021</a>
+        <div id="fl3Cl7">
+            <a href="https://venntors.com/" target="_blank" class="footHipervinculo">&copy;Venn 2021</a>
         </div>  
     </div>
 </footer>
